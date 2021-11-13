@@ -74,13 +74,13 @@
                             <span class='user_last_name'>${user.getLastName()}</span>
                             <span class='user_role'>
                                 <c:choose>
-                                    <c:when test = "${user.getRole() == 1}">
+                                    <c:when test = "${user.getRole().getRoleId() == 1}">
                                         System Admin
                                     </c:when>
-                                    <c:when test = "${user.getRole() == 2}">
+                                    <c:when test = "${user.getRole().getRoleId() == 2}">
                                         Regular User
                                     </c:when>
-                                    <c:when test = "${user.getRole() == 3}">
+                                    <c:when test = "${user.getRole().getRoleId() == 3}">
                                         Company Admin
                                     </c:when>
                                 </c:choose>
